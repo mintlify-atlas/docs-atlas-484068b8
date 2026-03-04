@@ -1,0 +1,98 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Davia",
+  "projectDescription": "Interactive, editable documentation designed for AI coding agents with support for MDX components, Excalidraw diagrams, and cloud sync.",
+  "theme": "palm",
+  "primaryColor": "#8c8c8c",
+  "lightColor": "#202022",
+  "darkColor": "#e1e1e2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "core-concepts/architecture",
+              "core-concepts/how-it-works",
+              "core-concepts/ai-agent-integration"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-documentation",
+              "guides/interactive-features",
+              "guides/cloud-sync",
+              "guides/local-development"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/init",
+              "cli/docs",
+              "cli/open",
+              "cli/login",
+              "cli/push"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/agent-setup",
+              "configuration/environment-variables",
+              "configuration/project-structure"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/troubleshooting",
+              "help/faq",
+              "help/contributing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "CLI tool for generating AI-powered interactive documentation",
+    "Integration with popular coding agents (Cursor, Windsurf, GitHub Copilot, etc.)",
+    "Support for MDX components and interactive visualizations",
+    "Excalidraw whiteboard integration with Mermaid conversion",
+    "Local web server for real-time editing with Tiptap editor",
+    "Cloud workspace sync for team collaboration",
+    "Data views for structured content display",
+    "Automatic agent instruction generation for different IDEs"
+  ],
+  "publicApiSurface": [
+    "davia init - Initialize Davia in current directory",
+    "davia docs - Generate initial documentation with AI agent",
+    "davia open - Start local web server to view documentation",
+    "davia login - Authenticate with Davia cloud",
+    "davia push - Push local documentation to cloud workspace",
+    "@davia/agent - AI agent package for documentation generation",
+    "@davia/web - Web viewer package for local documentation",
+    "write_file - Agent tool for writing content",
+    "search_replace - Agent tool for editing files",
+    "multi_edit - Agent tool for multiple edits",
+    "read_file - Agent tool for reading content",
+    "delete_file - Agent tool for deleting files"
+  ]
+}
